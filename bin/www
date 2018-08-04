@@ -24,7 +24,7 @@ var server = http.createServer(app);
 var io = require('socket.io')(server, {log:false, origins:'*:*'});
 var redis = require('redis');
 //var client = redis.createClient("redis://localhost:6379");
-var client = redis.createClient("redis://h:p21e9479e878e516f445132bf853765ca6ed2277f291b7600c88f86ec5d8d9371@ec2-54-236-162-33.compute-1.amazonaws.com:60629");
+var client = redis.createClient("redis://h:p97e2b775c434b2bf291ce0abd5406c24e5edef9cc5d842235f0fed21c7855532@ec2-18-206-25-206.compute-1.amazonaws.com:29759");
 
 client.flushdb(function (err, succeeded) {
   console.log(succeeded); // will be true if successfull
